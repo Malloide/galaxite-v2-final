@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: large;
+}
+
+
+body {
+    border-radius: 1rem;
+    background: rgb(0, 0, 26);
+    background: linear-gradient(151deg, rgba(0, 0, 26, 1) 0%, rgba(12, 12, 34, 1) 10%, rgba(19, 20, 42, 1) 20%, rgba(26, 26, 51, 1) 30%, rgba(33, 33, 59, 1) 40%, rgba(50, 49, 78, 1) 50%, rgba(78, 76, 107, 1) 60%, rgba(78, 76, 107, 1) 70%, rgba(108, 104, 137, 1) 80%, rgba(138, 135, 169, 1) 90%, rgba(170, 166, 202, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 100px;
+
+}
+
+.title1 {
+    color: aliceblue;
+    background-color: transparent;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: transparent;
+}
+
+.navbar {
+    background-color: rgb(113, 113, 240);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: 250ms ease-in-out ;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 100vw;
+    margin: 0;
+    border-radius: 1.5rem;
+    padding: 10px;
+}
+
+img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.item {
+    background-color: #3498db00;
+    color: white;
+    border: 0.3rem solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1.5rem;
+    transition: transform 0.5s;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.recuadro-1 {
+    grid-column: span 2;
+    transition: transform 0.5s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+
+}
+
+.recuadro-2 {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    transition: transform 0.5s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+}
+
+.recuadro-3 {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    transition: transform 0.5s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+}
+
+.recuadro-3:hover {
+    transform: translateY(-10px);
+}
+
+.recuadro-4 {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    transition: transform 0.5s;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 45, 68, 0.7);
+    display: flex;
+}
+
+.recuadro-4:hover {
+    transform: translateY(-10px);
+}
+
+.imagen1 {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: rgba(29, 45, 68, 0.7);
+    color: white;
+    border: 0.3rem solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1.5rem;
+    transition: transform 0.5s;
+}
+
+.imagen1 img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+
+.imagen1:hover {
+    transform: translateY(-10px);
+}
+
+#poster {
+    height: 12.5rem;
+    width: 50rem;
+    transition: box-shadow 0.1s transform 0.1s;
+    background:
+        no-repeat center;
+    background-size: cover;
+
+}
+
+#poster:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+    transform: scale(1.05);
+}
+
+.image-container {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: 3.125rem;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* hasta aca el index */
+
+.gridGalaxy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+}
+
+.recuadro-1g {
+    grid-column: 1 / span 3;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-2g {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-3g {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    grid-column: 2 / span 2;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-5g {
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-7g {
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-9g {
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-11g {
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-12g {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-12g img {
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-13g {
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-14g {
+    grid-column: 1 / span 3;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-15g {
+    grid-column: 1 / span 3;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-16g {
+    grid-column: 1 / span 3;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-17g {
+    grid-column: 1 / span 3;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+/* hasta aca galaxias */
+
+.gridStar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+}
+
+.recuadro-1e img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-2e {
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-3e {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-3e img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-4e {
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-5e {
+    grid-column: 1 / span 3;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+/* hasta aca estrellas */
+
+.gridPlanet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+}
+
+.recuadro-1p img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-2p {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-3p img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-4p {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-5p img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-6p {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-7p img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-8p {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-9p img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-10p {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-11p img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-12p {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;  
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+/* hasta aca planetas */
+
+.gridBigbang {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+}
+
+.recuadro-1b img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-2b {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;  
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-3b img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-4b {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;  
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-5b img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-6b {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;  
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-7b img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    background-color: rgba(29, 45, 68, 0.7);
+}
+
+.recuadro-8b {
+    grid-column: 2/ span 2;
+    display: flex;
+    align-items: center;
+    padding: 20px;  
+    background-color: rgba(29, 45, 68, 0.7);
+}
